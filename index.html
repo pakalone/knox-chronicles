@@ -1,103 +1,92 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<title>The Knox Chronicles</title>
-<style>
-
-body{
-font-family: Arial, sans-serif;
-background:#0f0f0f;
-color:#e0e0e0;
-margin:0;
-line-height:1.6;
-}
-
-header{
-background:#000;
-padding:40px;
-text-align:center;
-border-bottom:2px solid #8b0000;
-}
-
-h1{
-font-size:48px;
-letter-spacing:3px;
-}
-
-section{
-max-width:900px;
-margin:auto;
-padding:40px 20px;
-}
-
-h2{
-color:#ff4444;
-border-bottom:1px solid #333;
-padding-bottom:10px;
-}
-
-.discord{
-display:inline-block;
-padding:12px 20px;
-background:#8b0000;
-color:white;
-text-decoration:none;
-margin-top:20px;
-border-radius:4px;
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#000;
-border-top:2px solid #8b0000;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Knox Chronicles</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="brand">THE KNOX CHRONICLES</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="lore.html">Lore</a>
+        <a href="regolamento.html">Regolamento</a>
+        <a href="https://discord.gg/CyHWagcdwy" target="_blank">Discord</a>
+      </div>
+    </div>
+  </nav>
 
-<header>
-<h1>THE KNOX CHRONICLES</h1>
-<p>La cronaca della sopravvivenza nella Contea di Knox</p>
-<a class="discord" href="https://discord.gg/CyHWagcdwy">Entra nel Discord</a>
-</header>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>The Knox Chronicles</h1>
+      <p class="subtitle">La cronaca della sopravvivenza nella Contea di Knox</p>
+      <p class="lead">
+        The Knox Chronicles è un server di Project Zomboid dedicato al roleplay serio e immersivo.
+        Ambientato nella devastata Knox Country, il server privilegia la narrazione, l’interpretazione
+        dei personaggi e le storie create dai giocatori.
+      </p>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="https://discord.gg/CyHWagcdwy" target="_blank">Entra nel Discord</a>
+        <a class="btn btn-secondary" href="lore.html">Scopri la Lore</a>
+      </div>
+    </div>
+  </header>
 
-<section>
-<h2>Il Progetto</h2>
-<p>
-The Knox Chronicles è un server di Project Zomboid dedicato al roleplay serio e immersivo.
-Ogni scelta, relazione ed evento contribuisce a scrivere una vera cronaca della sopravvivenza.
-</p>
-</section>
+  <main class="container">
+    <section class="section">
+      <h2 class="section-title">Il Progetto</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>RP serio e immersivo</h3>
+          <p>
+            Il server mette al centro l’interpretazione dei personaggi, le relazioni tra i sopravvissuti
+            e una narrazione coerente e intensa.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Storia a capitoli</h3>
+          <p>
+            La lore è suddivisa in capitoli. Ogni fase della cronaca segna un’evoluzione del mondo
+            e degli eventi vissuti dai giocatori.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Permadeath regolamentato</h3>
+          <p>
+            Il server utilizza un sistema con PK e CK, in modo da dare peso alle conseguenze senza
+            sacrificare la qualità narrativa.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Mistero e sopravvivenza</h3>
+          <p>
+            L’origine del contagio è inizialmente sconosciuta. Dietro gli eventi sembrano celarsi
+            tracce di un possibile esperimento.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<section>
-<h2>Lore</h2>
-<p>
-1993. Il mondo si trova in una fase di cambiamento. La Guerra Fredda è terminata da poco
-e gli anni '90 segnano una nuova era di transizione tra il mondo analogico e l'inizio
-della rivoluzione digitale.
-</p>
+    <section class="section">
+      <h2 class="section-title">Accesso al Server</h2>
+      <div class="card">
+        <p class="section-text">
+          L’accesso a The Knox Chronicles avviene tramite whitelist. Questo permette di mantenere
+          alta la qualità del roleplay e costruire una community solida, coerente e coinvolta.
+        </p>
+        <p class="section-text">
+          Per entrare, unisciti al Discord ufficiale e segui le istruzioni fornite dallo staff.
+        </p>
+        <a class="btn btn-primary" href="https://discord.gg/CyHWagcdwy" target="_blank">Vai al Discord</a>
+      </div>
+    </section>
+  </main>
 
-<p>
-La storia inizia con il <strong>Wayland Outdoor Retreat</strong>, un ritiro organizzato
-dalla Wayland Biotechnology nella Daniel Boone National Forest.
-</p>
-</section>
-
-<section>
-<h2>Accesso al Server</h2>
-<p>
-Il server utilizza un sistema di whitelist per garantire un'esperienza RP di qualità.
-Per partecipare entra nel Discord e segui le istruzioni per la candidatura.
-</p>
-</section>
-
-<footer>
-<p>The Knox Chronicles — Community RP</p>
-</footer>
-
+  <footer class="footer">
+    <p>The Knox Chronicles — Community RP italiana di Project Zomboid</p>
+  </footer>
 </body>
 </html>
