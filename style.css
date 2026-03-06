@@ -13,8 +13,8 @@ body {
   color: #e7e7e7;
   line-height: 1.7;
   background-image:
-    linear-gradient(rgba(8, 8, 8, 0.92), rgba(8, 8, 8, 0.96)),
-    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+    linear-gradient(rgba(8,8,8,0.85), rgba(8,8,8,0.95)),
+url("sfondo.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
