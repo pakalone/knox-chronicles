@@ -61,18 +61,30 @@ a {
 }
 
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 80px 20px;
   text-align: center;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.82)),
-    url("image.png");
+  overflow: hidden;
+}
+
+.hero-poster {
+  background-image: url("image.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.82)),
+    linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.15));
+  z-index: 1;
 }
 
 .hero-content {
@@ -80,6 +92,17 @@ a {
   padding: 30px;
   border-radius: 14px;
   background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+}
+
+.poster-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 40px 24px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 10px 30px rgba(0,0,0,0.45);
 }
@@ -94,12 +117,12 @@ a {
 
 .hero h1 {
   margin: 0;
-  font-size: 64px;
+  font-size: 72px;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #ffffff;
-  text-shadow: 0 4px 18px rgba(0,0,0,0.65);
+  text-shadow: 0 4px 18px rgba(0,0,0,0.7);
 }
 
 .subtitle {
@@ -251,7 +274,7 @@ a {
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 38px;
+    font-size: 40px;
     letter-spacing: 2px;
   }
 
